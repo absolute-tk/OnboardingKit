@@ -26,6 +26,6 @@ extension Image {
         self.init(nsImage: image)
 #endif
     }
-
+    static let mockAppIcon: Image = Image(uiImage: UIImage(named: "mockAppIcon")!)
     static let appIcon: Image = Image(Bundle.main.appIcon) ?? Image(.mockAppIcon)
 }
